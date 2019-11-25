@@ -11,7 +11,7 @@ docker build -t sonar-scanner-cli:4.2 .
 ## Run a docker container
 
 ```
-docker run --rm -e SONARQUBE_URL=http://mysonarqube.com sonar-scanner-cli:4.2 sonar-scanner -D [arguments]
+docker run --rm -it -e SONARQUBE_URL=http://mysonarqube.com sonar-scanner-cli:4.2 sonar-scanner -D [arguments]
 ```
 
 # References
