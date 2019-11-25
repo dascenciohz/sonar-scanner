@@ -5,13 +5,13 @@ The sonar-scanner is the scanner to use when there is no specific scanner for yo
 ## Build a docker image
 
 ```
-docker build -t sonar-scanner-cli:4.2 .
+docker build -t dascencio/sonar-scanner-cli:4.2 .
 ```
 
 ## Run a docker container
 
 ```
-docker run --rm -it -e SONARQUBE_URL=http://mysonarqube.com sonar-scanner-cli:4.2 bash
+docker run --rm -it -e SONARQUBE_URL=http://mysonarqube.com dascencio/sonar-scanner-cli:4.2 bash
 
 sonar-scanner -D [arguments]
 ```
